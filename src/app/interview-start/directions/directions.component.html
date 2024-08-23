@@ -1,0 +1,144 @@
+<mat-toolbar color="secondary">
+  <mat-toolbar-row>
+    <span
+      ><b>Directions:</b>
+      <mat-card-subtitle
+        >An Angular 15 app has been generated for you. Your mission is to
+        populate the 'products' component that retrieves and displays data from
+        the backend. The backend will supply a list of products and categories.
+        Use NGRX and RXJS to fetch and store the data to
+        state.</mat-card-subtitle
+      ></span
+    >
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span>Best of luck!</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="centered">
+  <div class="grid-list">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Examine the app and generate files</mat-card-title>
+        <mat-card-subtitle
+          >Use the following cli commands to generate scaffolding for storing,
+          retrieving and displaying information in this app.</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li>
+            npx ng generate @ngrx/schematics:feature product
+            --path=src/app/product/_store
+          </li>
+          <li>
+            npx ng generate service product --path=src/app/product/_services
+          </li>
+          <li>
+            npx ng generate component product --path=src/app/product/_product
+          </li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions> </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Code the data service</mat-card-title>
+        <mat-card-subtitle
+          >Use the following endpoint(s) to provide data to your
+          app.</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li>https://dummyjson.com/products</li>
+          <li>https://dummyjson.com/products/categories</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions> </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Retrieve the data</mat-card-title>
+        <mat-card-subtitle
+          >Follow the directions to implement product state & hydrate its
+          component:</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li>add dependencies to view data from state</li>
+          <li>code the logic to retrieve data from the store</li>
+          <li>add the routing and html/css to display data</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions> </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Unit-test the component</mat-card-title>
+        <mat-card-subtitle
+          >Use the spec file generated above to test your component
+          logic:</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li>add dependencies to TestBed config</li>
+          <li>validate your test runs with the basic test</li>
+          <li>write 1 or more unit tests to prove your code works</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions> </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Discuss End-to-ends</mat-card-title>
+        <mat-card-subtitle
+          >Examine the following gherkin/cucumber sequence to create/discuss an
+          e2e flow:</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li>user should navigate to '/products'</li>
+          <li>and then click on the list component</li>
+          <li>and then view data</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions> </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Refactor the code</mat-card-title>
+        <mat-card-subtitle
+          >Augment and use the previous schematics to properly generate a
+          master/detail pattern:</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content>
+        <ul>
+          <li>Master should be list of categories</li>
+          <li>Detail should be a single product in that category</li>
+          <li>Data should be stored in and retrieved from ngrx</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions> </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="product">
+      <mat-card-header>
+        <mat-card-title>Result</mat-card-title>
+        <mat-card-subtitle>Display your work:</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <!-- <product></product> -->
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
